@@ -1,6 +1,10 @@
-.dot {
+#circle {
+    position: relative;
     background-color: blue;
-    color: blue;
-    width: 100px;
     border-radius: 50%;
+}
+
+#rectangle {
+    position: relative;
+    background-color: pink;
 }
