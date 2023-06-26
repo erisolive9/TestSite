@@ -1,3 +1,28 @@
+h1 {
+    color: blue;
+    text-align: center;
+    animation: slideInTop 0.5s;
+}
+
+p {
+    font-size: 64px;
+    background-color: rgb(255, 104, 167);
+}
+
+button {
+    background-color: rgb(0, 215, 215);
+    padding: 10px;
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    background-color: rgb(9, 240, 240);
+}
+
 #circle {
     position: relative;
     background-color: blue;
@@ -8,3 +33,36 @@
     position: relative;
     background-color: pink;
 }
+
+/* Animations */
+@keyframes slideInTop{
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-1000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
